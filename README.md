@@ -1,6 +1,6 @@
 # sumo-recomp
 
-A function-by-function C++ reconstruction of **Sumotori Dreams** (2010):
+A function-by-function C++ reconstruction of **Sumotori Dreams** (2007):
 `sumofull.exe` (the game) and `sumoeditor.exe` (the level editor build).
 The original was built with MSVC 7.1 for x86. Every reconstructed function
 carries the address of its original as a `// @ 0x......` comment.
