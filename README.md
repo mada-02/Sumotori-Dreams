@@ -23,7 +23,7 @@ statically linked MSVC runtime.
 | `src/generated` | assets extracted from the original executable (see below) |
 | `reference` | Ghidra pseudocode and disassembly of the game code (used for the work) |
 | `docs` | function map and decoding notes |
-| `tools` | asset extractor, function-map generator, standalone texture generator test |
+| `tools` | asset extractor, function-map generator, standalone texture generator test, Frida trace comparison against the original (`tools/difftrace`) |
 
 ## Building
 
@@ -63,6 +63,12 @@ python -I tools/extract_assets.py path\to\sumofull.exe
   constant, so the x87 build reproduces the same rounding.
 * `sin`, `cos`, `sqrt`, `tan` and `atan2` (texture generator) use the FPU
   instructions directly, like the original runtime did.
+* `Vec3::lengthSq` and `normalize` return/keep `double`: the original leaves
+  these results unrounded on the FPU stack.
+* The original also has C++ dynamic initializers that the CRT runs before
+  `WinMain` (table at 0x436004). One of them computes
+  `g_penetrationScale = g_gravity * -0.05`. Without it, bodies are never
+  pushed out of each other, and the wrestlers lean and fall.
 * Like the original, the game caches its generated textures as
   `tex00000.tga`…`tex00022.tga` in the working directory and loads them from
   there on later starts.

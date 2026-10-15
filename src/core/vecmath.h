@@ -91,32 +91,35 @@ struct Vec3 {
     }
 
     // @ 0x4022a2
-    float lengthSq() const { return x * x + y * y + z * z; }
+    // The original returns the sum in ST(0) without rounding it to float;
+    // double keeps (almost all of) that precision for the callers.
+    double lengthSq() const { return (double)x * x + (double)y * y + (double)z * z; }
 
     float dot(const Vec3 &o) const { return x * o.x + y * o.y + z * o.z; }
 
     // @ 0x4022c1  Returns the applied scale (1/length, or 0 for a null vector).
-    float normalize()
+    // The scale stays on the FPU stack; only the products are rounded.
+    double normalize()
     {
-        float s = (float)fp::sqrt(lengthSq());
-        if (s != 0.0f)
-            s = 1.0f / s;
-        x = s * x;
-        y = s * y;
-        z = s * z;
+        double s = fp::sqrt(lengthSq());
+        if (s != 0.0)
+            s = 1.0 / s;
+        x = (float)(s * x);
+        y = (float)(s * y);
+        z = (float)(s * z);
         return s;
     }
 
     // @ 0x402302
     Vec3 normalized() const
     {
-        float s = (float)fp::sqrt(lengthSq());
-        if (s != 0.0f)
-            s = 1.0f / s;
+        double s = fp::sqrt(lengthSq());
+        if (s != 0.0)
+            s = 1.0 / s;
         Vec3 r;
-        r.x = x * s;
-        r.y = y * s;
-        r.z = z * s;
+        r.x = (float)(x * s);
+        r.y = (float)(y * s);
+        r.z = (float)(z * s);
         return r;
     }
 

@@ -26,7 +26,8 @@ ContactCache g_contactCaches[MAX_CONTACT_CACHES];
 ContactCache *g_contactCacheEnd;
 float g_waterInvCell;
 char g_fragmentHardening;
-float g_penetrationScale;
+// @ 0x42ad2e: dynamic initializer run by the CRT before WinMain
+float g_penetrationScale = g_gravity * -0.05f;
 int g_skipPhysics;
 int g_physicsFrame;
 char g_physicsStarted;

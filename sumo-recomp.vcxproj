@@ -79,6 +79,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <AdditionalDependencies>d3d9.lib;dsound.lib;msacm32.lib;winmm.lib;comdlg32.lib;advapi32.lib;gdi32.lib;user32.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>

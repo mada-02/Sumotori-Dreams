@@ -39,7 +39,7 @@ extern ContactCache *g_contactCacheEnd;      // @ 0x561400
 
 extern float g_waterInvCell;                 // @ 0x5aec20 1 / water cell size
 extern char g_fragmentHardening;             // @ 0x746c28 fragments are 3x harder to break
-extern float g_penetrationScale;             // @ 0x7665d4 never written by the game (0)
+extern float g_penetrationScale;             // @ 0x7665d4 = g_gravity * -0.05 (0.00049)
 extern int g_skipPhysics;                    // @ 0x766434 never set by the game
 extern int g_physicsFrame;                   // @ 0x511dec
 extern char g_physicsStarted;                // @ 0x4536e8

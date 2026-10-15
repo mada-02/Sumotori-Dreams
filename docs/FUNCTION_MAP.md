@@ -48,28 +48,28 @@ layout (the only difference is the editor flag, see `core/common.h`).
 | `0x4021dc` | `cross` | src/core/vecmath.h:37 |
 | `0x402227` | `Vec3 operator*` | src/core/vecmath.h:47 |
 | `0x40225a` | `void operator+=` | src/core/vecmath.h:67 |
-| `0x402279` | `V3` | src/core/vecmath.h:143 |
+| `0x402279` | `V3` | src/core/vecmath.h:146 |
 | `0x4022a2` | `lengthSq` | src/core/vecmath.h:93 |
-| `0x4022c1` | `normalize` | src/core/vecmath.h:98 |
-| `0x402302` | `normalized` | src/core/vecmath.h:110 |
-| `0x402363` | `Vec3 operator*` | src/core/vecmath.h:187 |
-| `0x4023c6` | `Vec3 operator*` | src/core/vecmath.h:391 |
-| `0x402429` | `identity` | src/core/vecmath.h:173 |
-| `0x402456` | `rotateY` | src/core/vecmath.h:259 |
-| `0x4024da` | `rotateX` | src/core/vecmath.h:275 |
-| `0x402565` | `rotateZ` | src/core/vecmath.h:291 |
-| `0x4025ed` | `rotateLocalY` | src/core/vecmath.h:308 |
-| `0x402671` | `rotateLocalX` | src/core/vecmath.h:324 |
-| `0x4026fc` | `rotateLocalZ` | src/core/vecmath.h:340 |
+| `0x4022c1` | `normalize` | src/core/vecmath.h:100 |
+| `0x402302` | `normalized` | src/core/vecmath.h:113 |
+| `0x402363` | `Vec3 operator*` | src/core/vecmath.h:190 |
+| `0x4023c6` | `Vec3 operator*` | src/core/vecmath.h:394 |
+| `0x402429` | `identity` | src/core/vecmath.h:176 |
+| `0x402456` | `rotateY` | src/core/vecmath.h:262 |
+| `0x4024da` | `rotateX` | src/core/vecmath.h:278 |
+| `0x402565` | `rotateZ` | src/core/vecmath.h:294 |
+| `0x4025ed` | `rotateLocalY` | src/core/vecmath.h:311 |
+| `0x402671` | `rotateLocalX` | src/core/vecmath.h:327 |
+| `0x4026fc` | `rotateLocalZ` | src/core/vecmath.h:343 |
 | `0x402784` | `freeCameraReset` | src/game/camera.cpp:38 |
 | `0x4027fd` | `freeCameraSet` | src/game/camera.cpp:57 |
 | `0x402827` | `freeCameraResetAt` | src/game/camera.cpp:66 |
 | `0x402846` | `freeCameraUpdate` | src/game/camera.cpp:74 |
 | `0x402d01` | `gameCameraReset` | src/game/camera.cpp:192 |
-| `0x402e1d` | `rotate` | src/core/vecmath.h:123 |
-| `0x402ea2` | `rotate` | src/core/vecmath.h:131 |
+| `0x402e1d` | `rotate` | src/core/vecmath.h:126 |
+| `0x402ea2` | `rotate` | src/core/vecmath.h:134 |
 | `0x402f1b` | `gameCameraUpdate` | src/game/camera.cpp:228 |
-| `0x40381a` | `transposed` | src/core/vecmath.h:222 |
+| `0x40381a` | `transposed` | src/core/vecmath.h:225 |
 | `0x40386a` | `setProjection` | src/render/d3d.cpp:29 |
 | `0x40397a` | `setViewTransform` | src/render/d3d.cpp:58 |
 | `0x4039f6` | `applyRenderView` | src/render/d3d.cpp:81 |
@@ -85,13 +85,13 @@ layout (the only difference is the editor flag, see `core/common.h`).
 | `0x40451c` | `licenseStore` | src/license/license.cpp:69 |
 | `0x404571` | `licenseEnterKey` | src/license/license.cpp:80 |
 | `0x40461e` | `licenseIsValid` | src/license/license.cpp:111 |
-| `0x4046b5` | `atanXY` | src/core/vecmath.h:402 |
+| `0x4046b5` | `atanXY` | src/core/vecmath.h:405 |
 | `0x4046d0` | `fmodf2` | src/script/builtins.cpp:7 |
-| `0x4046eb` | `atanXY` | src/core/vecmath.h:402 |
+| `0x4046eb` | `atanXY` | src/core/vecmath.h:405 |
 | `0x404704` | `fmodWrapper` | src/script/builtins.cpp:13 |
 | `0x40471d` | `mul` | src/core/vecmath.h:57 |
 | `0x404752` | `sumoAssert` | src/core/common.h:31 |
-| `0x404761` | `V3` | src/core/vecmath.h:153 |
+| `0x404761` | `V3` | src/core/vecmath.h:156 |
 | `0x40479a` | `fnAtanXY` | src/script/builtins.cpp:30 |
 | `0x4047e0` | `fnAbs` | src/script/builtins.cpp:36 |
 | `0x404828` | `fnVec` | src/script/builtins.cpp:42 |
@@ -187,12 +187,12 @@ layout (the only difference is the editor flag, see `core/common.h`).
 | `0x407dd8` | `setFade` | src/game/menu.cpp:277 |
 | `0x407e0c` | `updateFade` | src/game/menu.cpp:287 |
 | `0x407e1c` | `void operator-=` | src/core/vecmath.h:75 |
-| `0x407e3b` | `row0` | src/core/vecmath.h:165 |
-| `0x407e65` | `row0` | src/core/vecmath.h:165 |
-| `0x407e90` | `row0` | src/core/vecmath.h:165 |
-| `0x407ebb` | `inverse` | src/core/vecmath.h:238 |
-| `0x407fa6` | `Mat3 operator*` | src/core/vecmath.h:197 |
-| `0x40809f` | `Mat3 operator+` | src/core/vecmath.h:213 |
+| `0x407e3b` | `row0` | src/core/vecmath.h:168 |
+| `0x407e65` | `row0` | src/core/vecmath.h:168 |
+| `0x407e90` | `row0` | src/core/vecmath.h:168 |
+| `0x407ebb` | `inverse` | src/core/vecmath.h:241 |
+| `0x407fa6` | `Mat3 operator*` | src/core/vecmath.h:200 |
+| `0x40809f` | `Mat3 operator+` | src/core/vecmath.h:216 |
 | `0x40810c` | `MassAccumulator` | src/physics/body.cpp:79 |
 | `0x408136` | `addTriangle` | src/physics/body.cpp:86 |
 | `0x4083ab` | `freeGeometry` | src/physics/body.cpp:10 |
@@ -213,31 +213,31 @@ layout (the only difference is the editor flag, see `core/common.h`).
 | `0x4089de` | `buildEdges` | src/physics/body.cpp:238 |
 | `0x408ace` | `finishShape` | src/physics/body.cpp:274 |
 | `0x408b34` | `init` | src/physics/body.cpp:288 |
-| `0x408c36` | `rebuildJointLinks` | src/physics/world.cpp:92 |
+| `0x408c36` | `rebuildJointLinks` | src/physics/world.cpp:93 |
 | `0x408d37` | `clear` | src/physics/body.cpp:315 |
-| `0x408d57` | `createBox` | src/physics/world.cpp:141 |
-| `0x408e01` | `allocScratchBodies` | src/physics/world.cpp:167 |
+| `0x408d57` | `createBox` | src/physics/world.cpp:142 |
+| `0x408e01` | `allocScratchBodies` | src/physics/world.cpp:168 |
 | `0x408e2a` | `emitAllBodies` | src/render/scene.cpp:249 |
 | `0x408e51` | `rebuildAfterCut` | src/physics/body.cpp:324 |
 | `0x408eab` | `contains` | src/physics/body.cpp:339 |
-| `0x408ee9` | `removeExcessDebris` | src/physics/world.cpp:174 |
+| `0x408ee9` | `removeExcessDebris` | src/physics/world.cpp:175 |
 | `0x408f5e` | `at` | src/core/common.h:58 |
-| `0x408f7d` | `push` | src/physics/world.cpp:203 |
-| `0x409004` | `pop` | src/physics/world.cpp:223 |
-| `0x4090cb` | `orthonormalize` | src/core/vecmath.h:356 |
-| `0x4091b0` | `rotate` | src/core/vecmath.h:365 |
-| `0x40927f` | `rotate` | src/core/vecmath.h:379 |
+| `0x408f7d` | `push` | src/physics/world.cpp:204 |
+| `0x409004` | `pop` | src/physics/world.cpp:224 |
+| `0x4090cb` | `orthonormalize` | src/core/vecmath.h:359 |
+| `0x4091b0` | `rotate` | src/core/vecmath.h:368 |
+| `0x40927f` | `rotate` | src/core/vecmath.h:382 |
 | `0x4092f8` | `clipFrom` | src/physics/body.cpp:358 |
 | `0x409679` | `cut` | src/physics/body.cpp:493 |
 | `0x4096d2` | `applyBuoyancy` | src/physics/body.cpp:501 |
 | `0x409a6c` | `integrate` | src/physics/body.cpp:561 |
 | `0x409b35` | `fracture` | src/physics/body.cpp:586 |
-| `0x409fce` | `collide` | src/physics/world.cpp:256 |
-| `0x40a477` | `solve` | src/physics/world.cpp:372 |
-| `0x40b5aa` | `replayPhysicsStep` | src/physics/world.cpp:700 |
-| `0x40b5f7` | `physicsStep` | src/physics/world.cpp:712 |
-| `0x40b685` | `seed` | src/physics/world.cpp:39 |
-| `0x40b798` | `next` | src/physics/world.cpp:72 |
+| `0x409fce` | `collide` | src/physics/world.cpp:257 |
+| `0x40a477` | `solve` | src/physics/world.cpp:373 |
+| `0x40b5aa` | `replayPhysicsStep` | src/physics/world.cpp:701 |
+| `0x40b5f7` | `physicsStep` | src/physics/world.cpp:713 |
+| `0x40b685` | `seed` | src/physics/world.cpp:40 |
+| `0x40b798` | `next` | src/physics/world.cpp:73 |
 | `0x40b83f` | `createSceneBuffers` | src/render/scene.cpp:46 |
 | `0x40b88c` | `textWarp` | src/render/scene.cpp:56 |
 | `0x40b97a` | `textBegin` | src/render/scene.cpp:74 |
@@ -266,7 +266,7 @@ layout (the only difference is the editor flag, see `core/common.h`).
 | `0x40e188` | `seedAiRandom` | src/game/sumo.cpp:1951 |
 | `0x40e1af` | `gameInit` | src/game/sumo.cpp:1958 |
 | `0x40e1d2` | `gameFrame` | src/game/game.cpp:42 |
-| `0x40e687` | `column1` | src/core/vecmath.h:170 |
+| `0x40e687` | `column1` | src/core/vecmath.h:173 |
 | `0x40e6b2` | `alignJointBody` | src/game/sumo.cpp:24 |
 | `0x40e73a` | `captureMotorTargets` | src/game/sumo.cpp:38 |
 | `0x40e7c8` | `centerOfMassOf` | src/game/sumo.cpp:49 |
@@ -409,7 +409,8 @@ Data, CRT routines and addresses inside functions referenced by comments.
 | Address | Symbol | Location |
 |---|---|---|
 | `0x40b829` | `Random` | src/physics/world.h:16 |
-| `0x41d384` | `ftol` | src/core/fpmath.h:46 |
+| `0x41d384` | `ftol` | src/core/fpmath.h:50 |
+| `0x42ad2e` | `g_penetrationScale` | src/physics/world.cpp:29 |
 | `0x42b278` | `angleScale` | src/game/camera.cpp:164 |
 | `0x42b27c` | `posScale` | src/game/camera.cpp:163 |
 | `0x42b338` | `kLevelDownstairs` | src/game/level_scripts.inc:68 |
@@ -453,7 +454,7 @@ Data, CRT routines and addresses inside functions referenced by comments.
 | `0x4536f4` | `kShadowFvf` | src/render/scene.cpp:11 |
 | `0x4536fc` | `g_shadowsEnabled` | src/render/scene.cpp:18 |
 | `0x453700` | `g_lightCount` | src/render/scene.cpp:17 |
-| `0x453708` | `kBoxFaces` | src/physics/world.cpp:132 |
+| `0x453708` | `kBoxFaces` | src/physics/world.cpp:133 |
 | `0x453858` | `g_sumoEnd` | src/game/sumo.h:109 |
 | `0x45385c` | `g_ringRadius` | src/game/game.h:34 |
 | `0x453860` | `g_dojoFlag` | src/game/sumo.cpp:22 |
@@ -536,7 +537,7 @@ Data, CRT routines and addresses inside functions referenced by comments.
 | `0x4eacd0` | `g_song` | src/audio/music.cpp:15 |
 | `0x511dec` | `g_physicsFrame` | src/physics/world.h:44 |
 | `0x511df0` | `g_unk511df0` | src/game/menu.cpp:20 |
-| `0x511df8` | `g_lastContactTag` | src/physics/world.cpp:36 |
+| `0x511df8` | `g_lastContactTag` | src/physics/world.cpp:37 |
 | `0x511dfc` | `g_unk511dfc` | src/game/sumo.cpp:1913 |
 | `0x511e00` | `g_penetrations` | src/physics/world.h:35 |
 | `0x521e00` | `g_joints` | src/physics/world.h:28 |
@@ -551,12 +552,12 @@ Data, CRT routines and addresses inside functions referenced by comments.
 | `0x562c10` | `g_menuSelection` | src/game/game.h:31 |
 | `0x562c14` | `g_penetrationEnd` | src/physics/world.h:36 |
 | `0x562c18` | `g_contactEnd` | src/physics/world.h:34 |
-| `0x562c20` | `g_contactTag` | src/physics/world.cpp:35 |
+| `0x562c20` | `g_contactTag` | src/physics/world.cpp:36 |
 | `0x5aec20` | `g_waterInvCell` | src/physics/world.h:40 |
 | `0x5aec28` | `g_contactCaches` | src/physics/world.h:37 |
 | `0x746c28` | `g_fragmentHardening` | src/physics/world.h:41 |
 | `0x746c30` | `g_bodies` | src/physics/world.h:23 |
-| `0x766432` | `g_unk766432` | src/physics/world.cpp:37 |
+| `0x766432` | `g_unk766432` | src/physics/world.cpp:38 |
 | `0x766434` | `g_skipPhysics` | src/physics/world.h:43 |
 | `0x766438` | `g_random` | src/physics/world.h:21 |
 | `0x7665d4` | `g_penetrationScale` | src/physics/world.h:42 |
