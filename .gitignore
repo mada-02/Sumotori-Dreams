@@ -1,0 +1,58 @@
+# Build output (MSBuild: bin\<config>, obj\<config>)
+bin/
+obj/
+x86/
+x64/
+Win32/
+ipch/
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.pdb
+*.idb
+*.iobj
+*.ipdb
+*.tlog/
+*.recipe
+*.log
+*.pch
+*.res
+*.sbr
+*.bsc
+
+# Textures written by the game on first run (tex00000.tga ...)
+tex[0-9]*.tga
+
+# Visual Studio per-user and cache files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sdf
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+*.VC.opendb
+*.aps
+*.ncb
+*.db-shm
+*.db-wal
+_ReSharper*/
+*.DotSettings.user
+
+# Editor and OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+*.bak
+*.tmp
+
+# Scratch and local-only notes
+scratch/
+*.local

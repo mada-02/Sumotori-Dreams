@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Debug Editor" />
+    <BuildType Name="Release" />
+    <BuildType Name="Release Editor" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="sumo-recomp.vcxproj" Id="3eee9461-f04d-4ab6-802f-8e6b0d88910e" />
+</Solution>
